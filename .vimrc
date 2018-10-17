@@ -75,4 +75,17 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+syntax on
 set nu
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set fileformat=unix
+
+" For *.js *.html *.css file
+au BufNewFile,BufRead *.js, *.html, *.css
+\ set tabstop=2
+\ set softtabstop=2
+\ set shiftwidth=2
